@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // ES #1
+        var emails = ["prova1@gmail.com", "prova2@gmail.com", "prova3@gmail.com"];
+        var userEmail = prompt("Inserisci la tua email:");
+        var accessGuarantee = false;
+
+        for (i = 0; i < emails.length && accessGuarantee == false; i++) {
+
+            var emailVerification = emails[i];
+
+            if (userEmail == emailVerification) {
+
+                accessGuarantee = true;
+            } else {
+
+            }
+        }
+
+        if (accessGuarantee == true) {
+
+            console.log("Access guarantee");
+        } else {
+
+            console.log("Access denied");
+        }
+
+    </script>
+</body>
+
+</html>
