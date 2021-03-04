@@ -13,30 +13,49 @@
     <script>
 
         // ES #1
-        var emails = ["prova1@gmail.com", "prova2@gmail.com", "prova3@gmail.com"];
-        var userEmail = prompt("Inserisci la tua email:");
-        var accessGuarantee = false;
+        // var emails = ["prova1@gmail.com", "prova2@gmail.com", "prova3@gmail.com"];
+        // var userEmail = prompt("Inserisci la tua email:");
+        // var accessGuarantee = false;
 
-        for (i = 0; i < emails.length && accessGuarantee == false; i++) {
+        // for (i = 0; i < emails.length && accessGuarantee == false; i++) {
 
-            var emailVerification = emails[i];
+        //     var emailVerification = emails[i];
 
-            if (userEmail == emailVerification) {
+        //     if (userEmail == emailVerification) {
 
-                accessGuarantee = true;
-            } else {
+        //         accessGuarantee = true;
+        //     } else {
 
-            }
-        }
+        //     }
+        // }
 
-        if (accessGuarantee == true) {
+        // if (accessGuarantee == true) {
 
-            console.log("Access guarantee");
+        //     console.log("Access guarantee");
+        // } else {
+
+        //     console.log("Access denied");
+        // }
+
+        // ES #2
+        var min = 1;
+        var max = 6 - min;
+
+        var computerRoll = Math.floor(Math.random() * max) + min;
+        var userRoll = Math.floor(Math.random() * max) + min;
+
+        console.log(computerRoll, userRoll);
+
+        if (computerRoll > userRoll) {
+
+            console.log("Computer wins");
+        } else if (userRoll > computerRoll) {
+
+            console.log("User wins");
         } else {
 
-            console.log("Access denied");
+            console.log("Draw");
         }
-
     </script>
 </body>
 
