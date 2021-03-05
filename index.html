@@ -17,19 +17,16 @@
         // var userEmail = prompt("Inserisci la tua email:");
         // var accessGuarantee = false;
 
-        // for (i = 0; i < emails.length && accessGuarantee == false; i++) {
+        // for (var i = 0; i < emails.length && !accessGuarantee; i++) {
 
         //     var emailVerification = emails[i];
 
         //     if (userEmail == emailVerification) {
 
         //         accessGuarantee = true;
-        //     } else {
-
-        //     }
         // }
 
-        // if (accessGuarantee == true) {
+        // if (accessGuarantee) {
 
         //     console.log("Access guarantee");
         // } else {
@@ -39,7 +36,7 @@
 
         // ES #2
         var min = 1;
-        var max = 6 - min;
+        var max = 6 - min + 1;
 
         var computerRoll = Math.floor(Math.random() * max) + min;
         var userRoll = Math.floor(Math.random() * max) + min;
